@@ -1,0 +1,56 @@
+---
+title       : Developing Data Products
+subtitle    : Reproducible Pitch
+author      : Srinivasa
+job         : Student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---
+Overview
+========================================================
+This tool is developed as a part of the course reproducible research provided in Coursera's Data Science Specialization.
+
+The tool explores the mtcars dataset. Specifically it plots out:
+
+1. MPG vs Displacement for different number of cylinders.
+2. MPG vs Displacement for different number of carburetors.
+
+---
+Summary of mtcars
+========================================================
+```{r}
+summary(mtcars)
+library(ggplot2)
+```
+---
+
+
+---
+MPG vs Displacement by different number of Cylinders
+========================================================
+```{r, echo=FALSE}
+gg2 <- ggplot(mtcars, aes(x=mpg, y=disp))+
+  geom_point(aes(color=cyl))+
+  xlab("MPG")+
+  ylab("Displacement")
+gg2
+```
+
+---
+MPG vs Displacement by different number of Carburetors
+========================================================
+```{r, echo=FALSE}
+gg2 <- ggplot(mtcars, aes(x=mpg, y=disp))+
+  geom_point(aes(color=carb))+
+  xlab("MPG")+
+  ylab("Displacement")
+gg2
+```
+
+---
+## Thank You.
