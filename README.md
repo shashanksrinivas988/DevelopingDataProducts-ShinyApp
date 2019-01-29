@@ -1,6 +1,6 @@
 # DevelopingDataProducts-ShinyApp-Documentation
 
-This tool is developed as a part of the course reproducible research provided in Coursera's Data Science Specialization.
+This tool is developed as a part of the course reproducible research provided in Coursera's Data Science Specialization. Please go to https://mynewshinyaccount.shinyapps.io/mynewshinyapp/ to view the application.
 
 The tool explores the mtcars dataset. Specifically it plots out:
 
